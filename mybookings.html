@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	 <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+	<title>My Bookings</title>
+	<style>
+		*{
+			font-family: Lato;
+		}
+		body{
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			background-image:linear-gradient(rgba(250,250,250,0.6),rgba(250,250,250,0.6)) ,url(images/408134.jpg);
+		}
+		 button,a {
+        color: white;
+    }
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>&nbsp</h1>
+        <h2>Добро пожаловать</h2>
+        <form action="mybookings.php" method="post">
+            <div class="form-group">
+                <label>Имя пользователя</label>
+                <input type="text" class="form-control" placeholder="Enter name" name="user" required/>
+            </div>
+            <div class="form-group">
+                <label>Пароль</label>
+                <input type="password" class="form-control" placeholder="Enter Password" name="pass" required/>
+            </div>
+
+            <button type="submit" class="btn btn-success">Продолжить</button>
+            <button class="btn btn-primary"><a href="homepage.php">На главную</a></button>
+        </form>
+    </div>
+</body>
+</html>

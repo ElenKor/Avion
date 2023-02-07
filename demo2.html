@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>SIGN-UP</title>
+	<meta charset="utf-8" meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+
+	<style>
+		body{
+			background-size: cover;
+			background-repeat: no-repeat;	
+      background-image:linear-gradient(rgba(50,50,50,0.2),rgba(50,50,50,0.2)) ,url(images/364283.jpg);
+		}
+		form
+		{
+			text-align: center;
+			font-size: 30px; 
+			color: black;
+			margin-left: 270px;
+		}
+		 .flight{
+      width: 50%;
+      margin-left: 400px;
+      margin-top: 21px;
+      border-radius: 10px;
+       }
+		
+		input[type = text], input[type = password]{
+  width: 55%;
+  height: auto;
+  border: 0.5px solid #B9B9BA;
+  padding: 10px;
+
+}
+.para{
+	font-size: 85px;
+	margin-left: 40px;
+}
+
+       
+		input[type=submit]{
+			background-color: #4CAF50;
+  			color: black;
+  			padding: 1px 5px;
+  			border: none;
+  			border-radius: 8px;
+  			cursor: pointer;
+  			width: 30%;
+ 			margin-bottom:1px;
+ 			
+		}
+		h2{
+			text-align: center;
+		}
+		.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 38%;
+  opacity: 0.8;
+}
+
+	</style>
+
+</head>
+<body>
+	<div class="col-md-5" align="margin-left">
+	<p class="para">AVION</p></div>
+    <form method="post" action="signup.php">
+	<div class="flight"><pre>
+       <h2>РЕГИСТРАЦИЯ</h2>
+   
+    ЛОГИН:   <input type="text" name="username" required><br>
+    ПАРОЛь:  <input type="password" name="password" required><br>
+    ИМЯ:     <input type="text" name="firstname" required><br>
+    ФАМИЛИЯ: <input type="text" name="lastname" required><br>
+    НОМЕР:   <input type="text" name="contact" required><br>
+    EMAIL:   <input type="text" name="email" required><br>
+        <button type="submit" class="btn">Продолжить</button>
+    </pre>
+</div>
+</form>
+</body>
+</html>
