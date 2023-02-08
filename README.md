@@ -1,4 +1,108 @@
-# AirlineDB
-The purpose of Airline Management System is to automate the existing manual system by the help of computerizing equipment and full-fledged computer software, fulfilling requirements, so that their valuable data/information can be stored for a longer period with easy accessing and manipulation of the same. The required software and hardware are easily available and easy to work with.
-Our project Airline Management System includes home page that allows user to check availability of flights. Using this software, we can check availability of flights and book tickets.
-The Airline Management System portal can be accessed using username and password of the admin. The interface we have created is very user-friendly. Airline Database Management System, as described above, can lead to error free, secure, reliable and fast management system. It can assist the user to concentrate on their other activities rather than record keeping. Thus, it will help organization in better utilization of resources. The organization can maintain computerized records without redundant entries. 
+# Avion
+
+## Оглавление
+1. [Описание проекта](#Описание)
+2. [Структура сайта](#Структура-сайта)
+3. [Используемое ПО](#Используемое-ПО)
+4. [Страницы сайта](#Страницы-сайта)
+ 
+## Описание
+Сайт ориентирован на ту часть целевой аудитории, которые интересуются онлайн просмотром существующих рейсов и покупкой авиабилетов.
+Основная функция сайта – удовлетворять информационные и потребительские запросы пользователя.
+
+## Структура cайта 
+![image](https://github.com/ElenKor/Avion/blob/main/images/6.png)
+<pre>
+На сайте присутствует:
+  1.	Верхняя панель с кнопками навигации по сайту. 
+  2.	Блок “Админ”, которая включает в себя функции:
+    •	Авторизация администратора;
+    •	Просмотр созданных рейсов;
+    •	Добавление нового рейса;
+    •	Удаление существующего рейса; 
+    •	Просмотр бронирований на существующий рейс.
+  3.	Блок “Мои бронирования”, которая включает в себя функции:
+    •	Авторизация пользователя;
+    •	Просмотр деталей бронирований, созданных авторизированным пользователем.
+  4.	Блок “Мои билеты”, которая включает в себя функции:
+    •	Авторизация по номеру бронирования;
+    •	Просмотр приобретенного билета по номеру бронирования.
+  5.	Блок “Контакты”, которая содержит контактную информацию и адреса компании. 
+  6.	Блок “Акции”, которая содержит информацию о промокодах и условиях акций компании.
+  7.	Блок “Главная”, которая включает в себя функции:
+    •	Поиск рейса по направлению и дате;
+    •	Просмотр деталей найденного рейса;
+    •	Регистрация пользователя;
+    •	Авторизация пользователя;
+    •	Оформление бронирования на выбранный рейс;
+    •	Просмотр деталей существующих бронирований пользователя;
+    •	Выбор способа и метода оплаты покупки билета;
+    •	Покупка билета; 
+    •	Просмотр и печать купленного билета.
+</pre>
+## Используемое ПО
+<pre>
+1. HTML
+  При помощи редактора кода Visual Studio создается абстрактная модель на основе тегов HTML.
+2. CSS
+  После создания абстрактной модели можно перейти к назначению каждому элементу некоторых классов CSS. При разработке дизайна страницы используется Bootstrap Framework, Который содержит HTML и CSS шаблоны оформления для типографики, веб-форм, кнопок, меток, блоков навигации и прочих компонентов веб- интерфейса, включая JavaScript расширения. Этот фреймворк упрощает создание адаптивного шаблона страниц.
+После прописывания каждому элементу некоторых классов CSS можно переходить к написанию тех стилей CSS, что еще не были разработаны. Для Этого также используется редактора кода Visual Studio.
+3. PHP
+  При помощи редактора кода Visual Studio создаются скрипты для выполнения на стороне сервера для взаимодействия с базами данных.
+4. MySQL
+  MySQL управляет реляционными базами данных, работает по принципу клиент-сервер. Компьютер пользователя (клиент) отправляет
+запрос. Сервер баз данных его обрабатывает и предоставляет ответ.
+</pre>
+
+## Страницы сайта
+#### Блок сайта “Главная”
+На самом верху находится блок навигации по сайту и чуть ниже форма для поиска рейсов по направлению и дате.
+<br>При нажатии кнопки “Найти” осуществляется переход на страницу просмотра деталей найденных рейсов 
+![image](https://github.com/ElenKor/Avion/blob/main/images/7.png)
+
+#### Cтраница “Детали рейса”
+![image](https://github.com/ElenKor/Avion/blob/main/images/8.png)
+
+#### Cтраница авторизации администратора
+![image](https://github.com/ElenKor/Avion/blob/main/images/9.png)
+
+#### Cтраница с функцией добавления нового рейса, доступная только администратору
+![image](https://github.com/ElenKor/Avion/blob/main/images/10.png)
+
+#### Cтраница с функциями проверки бронирований на рейс и удаления созданного рейса
+![image](https://github.com/ElenKor/Avion/blob/main/images/11.png)
+
+#### Cтраница просмотра созданных рейсов
+![image](https://github.com/ElenKor/Avion/blob/main/images/12.png)
+
+#### Блок “Акции”
+![image](https://github.com/ElenKor/Avion/blob/main/images/16.png)
+
+#### Блок “Мои билеты”
+  На нем присутсвует форма для авторизации пользователя по его имени и номеру бронирования, нажимая на кнопку “Продолжить”, пользователь сможет просмотреть информацию по заданному бронированию. 
+![image](https://github.com/ElenKor/Avion/blob/main/images/17.png)
+
+#### Блок “Админ” 
+На нем присутсвует форма для авторизации администратора сайта. 
+![image](https://github.com/ElenKor/Avion/blob/main/images/18.png)
+
+#### Блок “Регистрация пользователя”
+![image](https://github.com/ElenKor/Avion/blob/main/images/19.png)
+
+#### Страница оформления бронирования на выбранный рейс
+![image](https://github.com/ElenKor/Avion/blob/main/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202023-02-08%20%D0%B2%2019.10.47.png)
+
+#### Страница информации о пассажире при оформлении бронирования на выбранный рейс
+![image](https://github.com/ElenKor/Avion/blob/main/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202023-02-08%20%D0%B2%2019.11.07.png)
+
+#### Страница выбора способа оплаты при оформлении бронирования на выбранный рейс
+![image](https://github.com/ElenKor/Avion/blob/main/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202023-02-08%20%D0%B2%2019.11.22.png)
+
+#### Страница с информацией о совершенном бронировании
+![image](https://github.com/ElenKor/Avion/blob/main/images/%D0%A1%D0%BD%D0%B8%D0%BC%D0%BE%D0%BA%20%D1%8D%D0%BA%D1%80%D0%B0%D0%BD%D0%B0%202023-02-08%20%D0%B2%2019.11.39.png)
+
+
+
+
+
+
